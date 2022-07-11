@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMDB", "IMDB\IMDB.csproj", "{C196946C-A191-4E8C-B0C1-09448BD5118C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IMDB", "IMDB\IMDB.csproj", "{C196946C-A191-4E8C-B0C1-09448BD5118C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC", "MVC\MVC.csproj", "{81B3D9CE-45FC-4E93-B48B-EA1D8E298EAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{C196946C-A191-4E8C-B0C1-09448BD5118C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C196946C-A191-4E8C-B0C1-09448BD5118C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C196946C-A191-4E8C-B0C1-09448BD5118C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81B3D9CE-45FC-4E93-B48B-EA1D8E298EAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81B3D9CE-45FC-4E93-B48B-EA1D8E298EAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81B3D9CE-45FC-4E93-B48B-EA1D8E298EAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81B3D9CE-45FC-4E93-B48B-EA1D8E298EAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

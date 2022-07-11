@@ -53,6 +53,13 @@ namespace IMDB
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v2/swagger.json", "IMDB_updated v1"));
             }
 
+            app.UseCors(options =>
+            {
+                options.AllowAnyHeader();
+                options.AllowAnyMethod();
+                options.AllowAnyOrigin(); 
+            });
+
             app.UseHttpsRedirection();
 
             app.UseRouting();

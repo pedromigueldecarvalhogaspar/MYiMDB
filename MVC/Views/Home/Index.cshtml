@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+<ul id="produtos"></ul>
+
+<button onclick="obterProdutos();">Obter filmes</button>
+
+<script>
+    function obterProdutos() {
+      
+        fetch("https://localhost:44379/api/Produtos")
+            .then(httpResponseMessage => httpResponseMessage.json())
+            .then(dados => apresentarDados(dados));
+    }
+
+    async function obterProdutosAsync() {
+        var httpResponseMessage = await fetch("https://localhost:44379/api/Filmes");
+        var dados = await httpResponseMessage.json();
+        apresentarDados(dados);
+    }
+
+    function apresentarDados(listaDeFilmes) {
+        for (var i = 0; i < listaDeFilmes.length; i++) {
+            document.getElementById("produtos").innerHTML +=
+                "<li>" + listaDeProdutos[i].nome + "</li>";
+        }
+    }
+</script>
